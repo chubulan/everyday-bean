@@ -1,0 +1,602 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web豆バスケット</title>
+    <link rel="stylesheet" href="../css/bean-basket.css">
+    <script src="../javascript/bean-basket.js" defer></script>
+</head>
+<body>
+    <div id="loading-overlay">
+        <div class="spinner"></div>
+      </div>
+    <div class="container">
+        <div class="PCborder">
+            <img class="border topleft" src="../img/beanborder.svg" alt="豆のボーダー飾り">
+            <img class="border topright" src="../img/beanborder.svg" alt="豆のボーダー飾り">
+            <img class="border btmleft" src="../img/beanborder.svg" alt="豆のボーダー飾り">
+            <img class="border btmright" src="../img/beanborder.svg" alt="豆のボーダー飾り">
+        </div>
+        <div class="left-sidebar">
+            <h2 class="PC-navmenu-title">Menu</h2>
+            <nav class="PC-navmenu">
+                <ul>
+                    <li><a href="../index.html">TOP</a></li>
+                    <li><a href="../index.html#message">メッセージ</a></li>
+                    <li><a href="../index.html#today-bean">今日のWeb豆</a></li>
+                    <li><a href="../bean-basket/index.html">Web豆バスケット</a></li>
+                    <li><a href="../index.html#major-introduction">Webデザイン科紹介</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="main-content">
+            <header class="noPC">
+                <div class="logo">
+                    <a href="../index.html"><img src="../img/logo.svg" alt="Webデザイン科"></a>
+                </div>
+                <div class="nav-hamburger-btn" aria-label="Menu" role="button" aria-expanded="false">
+                    <div class="circle"></div>
+                    <div class="navbars">
+                        <div class="header__btn__line01 line"></div>
+                        <div class="header__btn__line02 line"></div>
+                        <div class="header__btn__line03 line"></div>
+                    </div>
+                </div>
+                <div class="navmenu">
+                    <h4 class="logotitle">日本電子Webデザイン科</h4>
+                    <nav class="smartphone-navmenu-big">
+                        <ul>
+                            <li><a href="../index.html">TOP</a></li>
+                            <li><a href="../index.html#message">メッセージ</a></li>
+                            <li><a href="../index.html#today-bean">今日のWeb豆</a></li>
+                            <li><a href="../bean-basket/index.html">Web豆バスケット</a></li>
+                            <li><a href="../index.html#major-introduction">Webデザイン科紹介</a></li>
+                        </ul>
+                    </nav>
+                    <nav class="smartphone-navmenu-small">
+                        <ul>
+                            <li><a href="https://www.jec.ac.jp/" target="_blank">日本電子公式サイト</a></li>
+                            <li><a href="https://www.jec.ac.jp/entrance/application/" target="_blank">出願・入学案内</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </header>
+
+            <section class="bean-basket" id="bean-basket">
+                <h2 class="bean-basket-title">
+                    <img class="beanbaskettitle1" src="../img/beanbaskettitle1.svg" alt="Web豆">
+                    <img class="beanbaskettitle2" src="../img/beanbaskettitle2.svg" alt="バスケット">
+                </h2>
+                <img class="little-bean beansprout3" src="../img/beansprout3.svg" alt="芽が出てきた豆の画像">
+                <div class="tabs">
+                    <button class="tab-button active" data-tab="design">デザインルール</button>
+                    <button class="tab-button inactive" data-tab="coding">コーディング知識</button>
+                </div>
+
+                <div class="tab-content active" id="design">
+                    <div class="filter">
+                        <select class="filter-select" id="design-filter">
+                            <option value="all">All</option>
+                            <option value="fourrules">四大原則</option>
+                            <option value="colors">色彩</option>
+                            <option value="fonts">フォント</option>
+                        </select>
+                    </div>
+                    <!-- Content for design rules -->
+                    <div class="designcards">
+
+                        <div class="card" data-tags="design fourrules">
+                            <button class="close-btn">&times;</button>
+                            <div class="card-content">
+                                <img class="card-img" data-tab="proximity" src="../img/cardimg/proximity.svg" alt="近接カード画像">
+                                <h3 class="card-title">デザインに近接を使えたらこんなことができるの？</h3>
+                                <div class="small-words">
+                                    <div class="tags-group">
+                                        <div class="tags">#四大原則</div>
+                                        <div class="tags">#デザインルール</div>
+                                    </div>
+                                    <div class="date">2024.07.30</div>
+                                </div>
+                            </div>
+                            <div class="card-expanded-content">
+                                <p class="card-content-p">知ってる？「近接」は関連する情報や要素を近くに配置することで、その関連性を強調し、情報のまとまりを作り出す。例えば、レストランのメニューで、同じ種類の料理を近づけて、顧客が瞬時にその料理の分類を理解できる。
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="card" data-tags="design fourrules">
+                            <button class="close-btn">&times;</button>
+                            <div class="card-content">
+                                <img class="card-img" data-tab="alignment" src="../img/cardimg/alignment.svg" alt="整列カード画像">
+                                <h3 class="card-title">デザインに整列を使ったらこんなことができるの？</h3>
+                                <div class="small-words">
+                                    <div class="tags-group">
+                                        <div class="tags">#四大原則</div>
+                                        <div class="tags">#デザインルール</div>
+                                    </div>
+                                    <div class="date">2024.07.30</div>
+                                </div>
+                            </div>
+                            <div class="card-expanded-content">
+                                <p class="card-content-p">知ってる？「整列」は要素の大きさや位置を揃え、決まったラインに配置することで、統一感と視覚的な調和感が生まれる。例えば、Webページでテキストや画像を左揃えにすることで、読みやすさが向上し、ページのバランスも取れる。
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="card" data-tags="design fourrules">
+                            <button class="close-btn">&times;</button>
+                            <div class="card-content">
+                                <img class="card-img" data-tab="repetition" src="../img/cardimg/repetition.svg" alt="反復カード画像">
+                                <h3 class="card-title">デザインに反復を使ったらこんなことができるの？</h3>
+                                <div class="small-words">
+                                    <div class="tags-group">
+                                        <div class="tags">#四大原則</div>
+                                        <div class="tags">#デザインルール</div>
+                                    </div>
+                                    <div class="date">2024.07.30</div>
+                                </div>
+                            </div>
+                            <div class="card-expanded-content">
+                                <p class="card-content-p">知ってる？「反復」は一定のルールを設け、同じデザイン要素を繰り返すことで、統一感が生まれる。例えば、Webページで同じフォントや色を使用することで、視覚的な一貫性が向上できる。また、ロゴやアイコンを統一したデザインで、ブランドの認知度が高まる。
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="card" data-tags="design fourrules">
+                            <button class="close-btn">&times;</button>
+                            <div class="card-content">
+                                <img class="card-img" data-tab="contrast" src="../img/cardimg/contrast.svg" alt="強調カード画像">
+                                <h3 class="card-title">デザインに強調を使ったらこんなことができるの？</h3>
+                                <div class="small-words">
+                                    <div class="tags-group">
+                                        <div class="tags">#四大原則</div>
+                                        <div class="tags">#デザインルール</div>
+                                    </div>
+                                    <div class="date">2024.07.30</div>
+                                </div>
+                            </div>
+                            <div class="card-expanded-content">
+                                <p class="card-content-p">知ってる？「強調」は大きさ、色、太さなどの差をつけることで、情報に優先度を与え、メリハリを生み出す。例えば、重要なタイトルやキーワードを大きく、目立つ色や太字で表現することで、ユーザーの視線を惹きつけることができる。
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="card" data-tags="design fourrules">
+                            <button class="close-btn">&times;</button>
+                            <div class="card-content">
+                                <img class="card-img" data-tab="yohaku" src="../img/cardimg/yohaku.svg" alt="余白カード画像">
+                                <h3 class="card-title">デザインに余白を使ったらこんなことができるの？</h3>
+                                <div class="small-words">
+                                    <div class="tags-group">
+                                        <div class="tags">#四大原則</div>
+                                        <div class="tags">#デザインルール</div>
+                                    </div>
+                                    <div class="date">2024.07.30</div>
+                                </div>
+                            </div>
+                            <div class="card-expanded-content">
+                                <p class="card-content-p">知ってる？「余白」は空白の部分であり、情報を効果的に配置し、読みやすさや視覚的なバランスを実現するために重要だ。情報のグループ化、階層化や重要な要素の強調を促進し、視覚的な混乱を減らす。また、余白をうまく使うことで、高級感や洗練された印象をを出したり、賑やかさを演出することもできる。
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="card" data-tags="design colors">
+                            <button class="close-btn">&times;</button>
+                            <div class="card-content">
+                                <img class="card-img" data-tab="colorpsycho" src="../img/cardimg/colorpsycho.svg" alt="色の心理効果カード画像">
+                                <h3 class="card-title">色が持つ心理効果とはどういうこと？</h3>
+                                <div class="small-words">
+                                    <div class="tags-group">
+                                        <div class="tags">#色彩</div>
+                                        <div class="tags">#デザインルール</div>
+                                    </div>
+                                    <div class="date">2024.07.30</div>
+                                </div>
+                            </div>
+                            <div class="card-expanded-content">
+                                <p class="card-content-p">知ってる？色を見た時の暖かい、冷たいと感じる温度のようなものは、色の寒暖感と呼ばれるんだ。これはいくつかの効果に関連してるんだ。例えば、実際に同じ距離にあっても、赤の方が青よりも近くにあるように見えるんだ。これは進出色と後退色と呼ばれるんだよ。それから、色の軽さや重さは明度に強く左右されるんだ。例えば、ダンボール箱の色を白などの軽い色に変えると、持ち運びの際の作業効率がアップするって言われてるんだ。
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="card" data-tags="design colors">
+                            <button class="close-btn">&times;</button>
+                            <div class="card-content">
+                                <img class="card-img" data-tab="colorimage" src="../img/cardimg/colorimage.svg" alt="色のイメージカード画像">
+                                <h3 class="card-title">色を見るとこんなことが頭の中に浮かぶ？</h3>
+                                <div class="small-words">
+                                    <div class="tags-group">
+                                        <div class="tags">#色彩</div>
+                                        <div class="tags">#デザインルール</div>
+                                    </div>
+                                    <div class="date">2024.07.30</div>
+                                </div>
+                            </div>
+                            <div class="card-expanded-content">
+                                <p class="card-content-p">知ってる？特定の色を見ると、それに関係した物やイメージを思い浮かべることができる。例えば、赤と言えば、太陽や火から、熱いや情熱的などの抽象的な感情や概念までが思い起こされる。一方、青と言えば、空や海を思い出して、爽やかで澄んだイメージが伝わる。色彩心理をうまく使えば、サイトやロゴのイメージも大きく変化する。
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="card" data-tags="design colors">
+                            <button class="close-btn">&times;</button>
+                            <div class="card-content">
+                                <img class="card-img" data-tab="colorscheme" src="../img/cardimg/colorscheme.svg" alt="配色のルールカード画像">
+                                <h3 class="card-title">配色の基本ルールと比率、知ってる？</h3>
+                                <div class="small-words">
+                                    <div class="tags-group">
+                                        <div class="tags">#色彩</div>
+                                        <div class="tags">#デザインルール</div>
+                                    </div>
+                                    <div class="date">2024.07.30</div>
+                                </div>
+                            </div>
+                            <div class="card-expanded-content">
+                                <p class="card-content-p">知ってる？サイトを作る時、配色比率が大事なことだ。一般的に「ベースカラー」（70%）、「メインカラー」（25%）、「アクセントカラー」（5%）の三つに分かれて構成されている。ベースカラーは、主に背景色などに使われるので、白・黒・グレーなどの無彩色がよく使われている。メインカラーは、サイトの印象を大きく決める色で、企業のコーポレートカラーやロゴの色から選ぶことが多い。アクセントカラーは、メリハリをつけたい時や強調したい要素がある時に使う色。
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="card" data-tags="design fonts">
+                            <button class="close-btn">&times;</button>
+                            <div class="card-content">
+                                <img class="card-img" data-tab="japanesefont" src="../img/cardimg/japanesefont.svg" alt="日本語フォントカード画像">
+                                <h3 class="card-title">知りたい！よく使う四つの日本語フォント</h3>
+                                <div class="small-words">
+                                    <div class="tags-group">
+                                        <div class="tags">#フォント</div>
+                                        <div class="tags">#デザインルール</div>
+                                    </div>
+                                    <div class="date">2024.07.30</div>
+                                </div>
+                            </div>
+                            <div class="card-expanded-content">
+                                <p class="card-content-p">日本語の文字は、「明朝体」と「ゴシック体」、「筆書体」、「デザイン書体」に大まかに分かれている。明朝体は、筆で書いたように、書き始めや終わりにされている文字。ゴシック体は太さが均一で、視認性が高いとされている。筆書体は筆の印象が強い書体、デザイン書体は手書き風の書体やポップ体が含まれている。
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="card" data-tags="design fonts">
+                            <button class="close-btn">&times;</button>
+                            <div class="card-content">
+                                <img class="card-img" data-tab="englishfont" src="../img/cardimg/englishfont.svg" alt="欧文フォントカード画像">
+                                <h3 class="card-title">知りたい！よく使われる四つの欧文フォント</h3>
+                                <div class="small-words">
+                                    <div class="tags-group">
+                                        <div class="tags">#フォント</div>
+                                        <div class="tags">#デザインルール</div>
+                                    </div>
+                                    <div class="date">2024.07.30</div>
+                                </div>
+                            </div>
+                            <div class="card-expanded-content">
+                                <p class="card-content-p">欧文語の文字も四つのカテゴリーに大別できる。一つ目は「セリフ体」と呼ばれ、Times New Romanに代表されるような縦線が太く、ウロコのある書体だ。二つ目は「サンセリフ体」と呼ばれ、線の太さが一様でウロコのない書体だ。ゴシック体なら、ArialやCalibriなどが有名だ。三つ目は「スクリプト体」で、手書きのニュアンスを表現する書体です。四つ目は「デザイン書体」で、日本語のデザイン書体と同じように、コミカルやポップなイメージを与える。
+                                </p>
+                            </div>
+                        </div>
+                  </div>
+                </div>
+
+                <div class="tab-content" id="coding">
+                    <!-- Content for coding knowledge -->
+                    <div class="filter">
+                        <select class="filter-select" id="coding-filter">
+                            <option value="all">All</option>
+                            <option value="HTML">HTML</option>
+                            <option value="CSS">CSS</option>
+                            <option value="JS">JS</option>
+                        </select>
+                    </div>
+
+                    <div class="codingcards">
+                        <!--HTML cards-->                   
+                        <div class="card" data-tags="coding HTML">
+                            <button class="close-btn">&times;</button>
+                            <div class="card-content">
+                                <img class="card-img" data-tab="HTMLCSSJSrelation" src="../img/cardimg/HTMLCSSJS.svg" alt="HTML、CSS、JSの関連カード画像">
+                                <h3 class="card-title">HTML、CSS、JavaScriptとはどんな関連性がある？</h3>
+                                <div class="small-words">
+                                    <div class="tags-group">
+                                        <div class="tags">#HTML</div>
+                                        <div class="tags">#コーディング</div>
+                                    </div>
+                                    <div class="date">2024.07.30</div>
+                                </div>
+                            </div>
+                            <div class="card-expanded-content">
+                                <p class="card-content-p">知ってる？HTMLとCSS、JavaScriptは全部Webサイトを作る時必要なプログラミング言語だけど、それぞれ違う役割を持っている。人の例にすれば、HTMLは人の骨格とで、人が必要なパーツを揃える言語だ。CSSは人の見た目やパーツの位置を調整する役割で、JavaScriptは人が動けるように働いてる。この三つはWebサイトを制作する上では必要なスキルなので、ぜひ理解してみてください！
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="card" data-tags="coding HTML">
+                            <button class="close-btn">&times;</button>
+                            <div class="card-content">
+                                <img class="card-img" data-tab="HTMLintroduction" src="../img/cardimg/HTMLintro.svg" alt="HTML紹介カード画像">
+                                <h3 class="card-title">HTMLって実際にWebデザインでこんな役割がある？</h3>
+                                <div class="small-words">
+                                    <div class="tags-group">
+                                        <div class="tags">#HTML</div>
+                                        <div class="tags">#コーディング</div>
+                                    </div>
+                                    <div class="date">2024.07.30</div>
+                                </div>
+                            </div>
+                            <div class="card-expanded-content">
+                                <p class="card-content-p">知ってる？HTMLはHyper Text Markup Languageの略で、Webページを作るための言語だよ。今、インターネット上にあるすべてのWebサイトで使われているんだ。 HTMLを使うと、段落や見出しを作ったり、リンクを貼ったり、画像を表示したりすることができるんだ。要するに、Webサイトの基本的な構造や機能を作るためのものなんだよ。
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="card" data-tags="coding HTML">
+                            <button class="close-btn">&times;</button>
+                            <div class="card-content">
+                                <img class="card-img" data-tab="HTMLlang" src="../img/cardimg/HTMLlang.svg" alt="HTML言語設定カード画像">
+                                <h3 class="card-title">文字化けは怖い！これを使ったら問題を解決できる？</h3>
+                                <div class="small-words">
+                                    <div class="tags-group">
+                                        <div class="tags">#HTML</div>
+                                        <div class="tags">#コーディング</div>
+                                    </div>
+                                    <div class="date">2024.07.30</div>
+                                </div>
+                            </div>
+                            <div class="card-expanded-content">
+                                <p class="card-content-p">知ってる？こんな文字が出る時は「文字化け」と呼ばれる。これは、ブラウザによっては文字コードが正しく判別されなくて、文字化けの状態になってしまう。HTMLのファイルの&lt;head&gt;タグに&lt;meta charset=”utf-8”&gt;を書いたら、簡単に解消するよ。
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="card" data-tags="coding HTML">
+                            <button class="close-btn">&times;</button>
+                            <div class="card-content">
+                                <img class="card-img" data-tab="h-tag" src="../img/cardimg/h-tag.svg" alt="hタグカード画像">
+                                <h3 class="card-title">HTMLの&lt;h&gt;タグってこんなことができるの？</h3>
+                                <div class="small-words">
+                                    <div class="tags-group">
+                                        <div class="tags">#HTML</div>
+                                        <div class="tags">#コーディング</div>
+                                    </div>
+                                    <div class="date">2024.07.30</div>
+                                </div>
+                            </div>
+                            <div class="card-expanded-content">
+                                <p class="card-content-p">知ってる？HTMLはタイトルや見出しを表現するには&lt;h○&gt;タグを使う。○の中には1~6までの数字を入れる、一番重要な大見出しはh1、中見出しがh2、小見出しはh3のように、違う階層にある見出しを表示できる。基本的に「h1>h6」という重要度の順に並べるイメージで考える。
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="card" data-tags="coding HTML">
+                            <button class="close-btn">&times;</button>
+                            <div class="card-content">
+                                <img class="card-img" data-tab="olandul" src="../img/cardimg/olandul.svg" alt="olとulの違いカード画像">
+                                <h3 class="card-title">リストを作りたいなら、&lt;ol&gt;と&lt;ul&gt;どっちがいい？</h3>
+                                <div class="small-words">
+                                    <div class="tags-group">
+                                        <div class="tags">#HTML</div>
+                                        <div class="tags">#コーディング</div>
+                                    </div>
+                                    <div class="date">2024.07.30</div>
+                                </div>
+                            </div>
+                            <div class="card-expanded-content">
+                                <p class="card-content-p">知ってる？Webページを作る時、コンテンツをリストのようにユーザーに見せたいなら、二つの方法があるよ。&lt;ol&gt;タグは順番に意味がある「順序リスト」を表し、一方、&lt;ul&gt;タグは順番が関係ない「順不同リスト」を表す。でも使う時は、どちらの場合も中に&lt;li&gt;タグを使ってリストの中身を書かなきゃいけないよ。
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="card" data-tags="coding HTML">
+                            <button class="close-btn">&times;</button>
+                            <div class="card-content">
+                                <img class="card-img" data-tab="a-tag" src="../img/cardimg/a-tag.svg" alt="aタグのカード画像">
+                                <h3 class="card-title">&lt;a&gt;タグを使ったら、別のページへ飛ばせる？</h3>
+                                <div class="small-words">
+                                    <div class="tags-group">
+                                        <div class="tags">#HTML</div>
+                                        <div class="tags">#コーディング</div>
+                                    </div>
+                                    <div class="date">2024.07.30</div>
+                                </div>
+                            </div>
+                            <div class="card-expanded-content">
+                                <p class="card-content-p">知ってる？自分のページから別のページやWebサイトに移動したい時は、HTMLの&lt;a&gt;タグを使って、その中に行き先のURLを指定すればいい。要するに、&lt;a&gt;タグはハイパーリンクを設置するために使う。実際に書いてみると、&lt;a&gt;タグで囲った部分は青色に変わり、下線が引かれてリンクになっていることがユーザーにわかるようになる。
+                                </p>
+                            </div>
+                        </div>
+
+                        <!--CSS cards-->
+                        <div class="card" data-tags="coding CSS">
+                            <button class="close-btn">&times;</button>
+                            <div class="card-content">
+                                <img class="card-img" data-tab="CSSintroduction" src="../img/cardimg/CSSintro.svg" alt="CSS紹介のカードの画像">
+                                <h3 class="card-title">CSSって実際にWebデザインでこんな役割がある？</h3>
+                                <div class="small-words">
+                                    <div class="tags-group">
+                                        <div class="tags">#CSS</div>
+                                        <div class="tags">#コーディング</div>
+                                    </div>
+                                    <div class="date">2024.07.30</div>
+                                </div>
+                            </div>
+                            <div class="card-expanded-content">
+                                <p class="card-content-p">知ってる？CSSはWebページの要素の装飾やスタイルを指示するための仕様の一つだ。簡単に言えば、これは三つのパートに分かれている。「HTMLファイルのどこ」で「何を」「どのように」するかを指定するのがCSSの役割です。 例えば、「h1」の文字色を変更したり、サイト全体の背景色を黄色にするという指示は、一般的にCSSで指定してスタイルなどをコントロールすることができる。
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="card" data-tags="coding CSS">
+                            <button class="close-btn">&times;</button>
+                            <div class="card-content">
+                                <img class="card-img" data-tab="CSSidandclass" src="../img/cardimg/idandclass.svg" alt="idとclassセレクタのカードの画像">
+                                <h3 class="card-title">idとclassセレクタの違いは何って知ってる？</h3>
+                                <div class="small-words">
+                                    <div class="tags-group">
+                                        <div class="tags">#CSS</div>
+                                        <div class="tags">#コーディング</div>
+                                    </div>
+                                    <div class="date">2024.07.30</div>
+                                </div>
+                            </div>
+                            <div class="card-expanded-content">
+                                <p class="card-content-p">知ってる？HTMLのタグの前にidやclassの「セレクタ」を加えると、CSSで細かく指定することができるよ。でも、idとclassにはそれぞれ役割があって、使うタイミングも違う。idは同じファイル内で同じ名前を複数つけることができないので、一般的に一回しか出ない要素に使う。CSSで書く時は、id名の前に「#」をつける。一方、classは同じファイル内で同じ名前を複数つけることができるので、繰り返し使う要素に使う。CSSで書く時は、class名の前に「.」をつける。
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="card" data-tags="coding CSS">
+                            <button class="close-btn">&times;</button>
+                            <div class="card-content">
+                                <img class="card-img" data-tab="boxmodel" src="../img/cardimg/boxmodel.svg" alt="ボックスモデルのカードの画像">
+                                <h3 class="card-title">box modelのはWebデザインを作る時に欠かせない重要な知識？</h3>
+                                <div class="small-words">
+                                    <div class="tags-group">
+                                        <div class="tags">#CSS</div>
+                                        <div class="tags">#コーディング</div>
+                                    </div>
+                                    <div class="date">2024.07.30</div>
+                                </div>
+                            </div>
+                            <div class="card-expanded-content">
+                                <p class="card-content-p">知ってる？HTML要素をページレイアウトの部品として扱う時、ボックスモデルの概念は必要だ。各要素はボックスに囲われていて、以下のように構成されている。（画像を入れる）
+                                    ボックスモデルを使うと、要素の周囲に境界線を追加したり、要素間のスペースを定義したりできる。もし自分がWebサイトを作る時、大きさや余白を調整したい時、ぜひ色々試してね。                                    
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="card" data-tags="coding CSS">
+                            <button class="close-btn">&times;</button>
+                            <div class="card-content">
+                                <img class="card-img" data-tab="gridvsflexbox" src="../img/cardimg/gridvsflexbox.svg" alt="グリッドv.s.フレックスボックスのカードの画像">
+                                <h3 class="card-title">Webページを作る時、gridとflexboxどっちを使ったほうがいい？</h3>
+                                <div class="small-words">
+                                    <div class="tags-group">
+                                        <div class="tags">#CSS</div>
+                                        <div class="tags">#コーディング</div>
+                                    </div>
+                                    <div class="date">2024.07.30</div>
+                                </div>
+                            </div>
+                            <div class="card-expanded-content">
+                                <p class="card-content-p">知ってる？CSSでWebサイトのレイアウトを作る時、主にグリッドとフレックスボックスという技術を使ってる。グリッドは二次元レイアウトシステムで、行（row）と列（column）の両方にアイテムを配置することができる。グリッドを使うと、複雑なページレイアウトに適している。全体のレイアウトや大きなコンテナの中の配置に便利。
+                                    フレックスボックスは一元レイアウトシステムで、アイテムを行（row）か列（column）のどちらか一方向に配置します。単純な並べ替えやアイテムの順序変更、ナビゲーションやリストなどの配置がとても便利だ。                                    
+                                </p>
+                            </div>
+                        </div>
+
+                        <!--JS cards-->
+                        <div class="card" data-tags="coding JS">
+                            <button class="close-btn">&times;</button>
+                            <div class="card-content">
+                                <img class="card-img" data-tab="JSintroduction" src="../img/cardimg/JSintro.svg" alt="JavaScriptの紹介のカードの画像">
+                                <h3 class="card-title">JSって実際にWebデザインでこんな役割がある？</h3>
+                                <div class="small-words">
+                                    <div class="tags-group">
+                                        <div class="tags">#JS</div>
+                                        <div class="tags">#コーディング</div>
+                                    </div>
+                                    <div class="date">2024.07.30</div>
+                                </div>
+                            </div>
+                            <div class="card-expanded-content">
+                                <p class="card-content-p">知ってる？JavaScriptは、Webページに色々な動きをつけるためのプログラミング言語だよ。例えば、ボタンをクリックするとメニューが出てきたり、フォームに入力した内容をリアルタイムでチェックしたりできるんだ。Webブラウザで動くから、JavaScriptは絶対に知っておきたい技術だね。
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="card" data-tags="coding JS">
+                            <button class="close-btn">&times;</button>
+                            <div class="card-content">
+                                <img class="card-img" data-tab="constandlet" src="../img/cardimg/constandlet.svg" alt="constとletのカードの画像">
+                                <h3 class="card-title">JSにある二つの変数constとletの違いは何？</h3>
+                                <div class="small-words">
+                                    <div class="tags-group">
+                                        <div class="tags">#JS</div>
+                                        <div class="tags">#コーディング</div>
+                                    </div>
+                                    <div class="date">2024.07.30</div>
+                                </div>
+                            </div>
+                            <div class="card-expanded-content">
+                                <p class="card-content-p">知ってる？JavaScriptには変数というものがあるんだ。変数はデータに名前をつけることで、繰り返し利用できるようにした箱みたいなものだ。その中に、二つの種類があって、constとletがある。constは一度値を設定すると再代入できない変数で、強力な接着剤で閉じた箱を想像すると分かりやすい。一方、letは値を変更できる変数で、テープで閉じた箱のようなもの。ループや条件分岐の中で値を変更したい場合に便利だよ。
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="card" data-tags="coding JS">
+                            <button class="close-btn">&times;</button>
+                            <div class="card-content">
+                                <img class="card-img" data-tab="object" src="../img/cardimg/object.svg" alt="オブジェクトのカードの画像">
+                                <h3 class="card-title">JSのobjectはデータにこんなことができるの？</h3>
+                                <div class="small-words">
+                                    <div class="tags-group">
+                                        <div class="tags">#JS</div>
+                                        <div class="tags">#コーディング</div>
+                                    </div>
+                                    <div class="date">2024.07.30</div>
+                                </div>
+                            </div>
+                            <div class="card-expanded-content">
+                                <p class="card-content-p">知ってる？JavaScriptのオブジェクトは、データを整理して扱いやすくするための入れ物みたいなものだよ。書き方は例えば、{name: “太郎”, age: 18}のように使う。このように、{ } の中には、左辺にプロパティ名、右辺に値を記して、オブジェクトを記述することができる。オブジェクトはたくさんのデータを一つにまとめて管理できるもので、複数の関連する情報をまとめて扱いたい時にとても便利なんだよ。
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="card" data-tags="coding JS">
+                            <button class="close-btn">&times;</button>
+                            <div class="card-content">
+                                <img class="card-img" data-tab="ifandelse" src="../img/cardimg/ifandelse.svg" alt="ifとelseのカードの画像">
+                                <h3 class="card-title">if文とelse文はプログラムに条件を分岐することができる？</h3>
+                                <div class="small-words">
+                                    <div class="tags-group">
+                                        <div class="tags">#JS</div>
+                                        <div class="tags">#コーディング</div>
+                                    </div>
+                                    <div class="date">2024.07.30</div>
+                                </div>
+                            </div>
+                            <div class="card-expanded-content">
+                                <p class="card-content-p">知ってる？if文は条件分岐の文章構造だ。特定の条件が満たされた時にだけ、指定された処理を実行することができる。書き方はこんな感じです。if (条件) { }。もし条件を満たせなかった場合に実行する処理があるなら、else if やelse として宣言してから新たなブロックを追加する。
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <footer>
+                <div class="logo">
+                    <a href="../index.html"><img src="../img/logo.svg" alt="Webデザイン科"></a>
+                </div>
+                <nav class="footer-big-nav">
+                    <ul>
+                        <li><a href="../index.html">TOP</a></li>
+                        <li><a href="../index.html#message">メッセージ</a></li>
+                        <li><a href="../index.html#today-bean">今日のWeb豆</a></li>
+                        <li><a href="../bean-basket/index.html">Web豆バスケット</a></li>
+                        <li><a href="../index.html#major-introduction">Webデザイン科紹介</a></li>
+                    </ul>
+                </nav>
+                <nav class="footer-small-nav">
+                    <ul>
+                        <li><a href="https://www.jec.ac.jp/" target="_blank">日本電子公式サイト</a></li>
+                        <li><a href="https://www.jec.ac.jp/entrance/application/" target="_blank">出願・入学案内</a></li>
+                    </ul>
+                </nav>
+                <div class="footer-picture">
+                    <img src="../img/footerpic.svg" alt="芽が出てきた豆の画像">
+                </div>
+                <small>© 日本電子専門学校 Webデザイン科 All Rights Reserved</small>
+            </footer>
+        </div>
+        <div class="right-sidebar">
+            <form action="https://www.jec.ac.jp/" target="_blank" method="get">
+                <button class="PCbtn site">日本電子専門公式サイト</button>
+            </form>
+            <form action="https://www.jec.ac.jp/entrance/application/" target="_blank" method="get">
+                <button class="PCbtn admission">出願・入学案内</button>
+            </form>
+        </div>
+    </div>
+</body>
+</html>

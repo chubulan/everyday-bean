@@ -1,0 +1,14 @@
+<svg width="154" height="147" viewBox="0 0 154 147" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<mask id="mask0_387_487" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="154" height="147">
+<rect width="153.497" height="147" fill="url(#pattern0_387_487)"/>
+</mask>
+<g mask="url(#mask0_387_487)">
+<path d="M46.1352 106.725C8.47215 102.085 8.21516 75.5777 12.6966 63.5598C21.8998 38.8799 41.1367 29.3256 56.8218 32.964C67.5084 35.4429 78.601 36.7544 89.3986 32.964C103.532 28.0026 148.002 28.1679 143.521 74.1443C139.039 120.121 101.292 117.144 86.8131 115.325C71.128 113.354 71.6451 109.867 46.1352 106.725Z" fill="#F69D4C" fill-opacity="0.8"/>
+</g>
+<defs>
+<pattern id="pattern0_387_487" patternContentUnits="objectBoundingBox" width="0.0521182" height="0.0544218">
+<use xlink:href="#image0_387_487" transform="scale(0.00651478 0.00680272)"/>
+</pattern>
+<image id="image0_387_487" width="8" height="8" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAgAAAAICAYAAADED76LAAAAAXNSR0IArs4c6QAAABdJREFUGBljYGBg+A/FQAoTMGEKDUcRAATwAgFGIXEOAAAAAElFTkSuQmCC"/>
+</defs>
+</svg>
