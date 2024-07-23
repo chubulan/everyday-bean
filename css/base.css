@@ -33,7 +33,6 @@ html, body {
   align-items: center;
   z-index: 9999;
 }
-
 .spinner {
   width: 50px;
   height: 50px;
@@ -1736,6 +1735,59 @@ PC version
 }
 
 
+.PCdecoration {
+  width: 100%;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  pointer-events: none;
+  z-index: 1000;
+}
+.PCdec {
+  position: absolute;
+}
+.left1 {
+  bottom: 26%;
+  left: 24%;
+  animation: floating1 3s ease-in-out infinite;
+}
+.left2 {
+  bottom: 26%;
+  left: 22%;
+  animation: floating2 3s ease-in-out infinite;
+}
+.righttop1 {
+  top: 32%;
+  right: 16%;
+  animation: floating2 3s ease-in-out infinite;
+}
+.righttop2 {
+  top: 36%;
+  right: 20%;
+  animation: floating1 3s ease-in-out infinite;
+} 
+.rightbtm1 {
+  bottom: 12%;
+  right: 3%;
+  animation: floating2 3s ease-in-out infinite;
+}
+.rightbtm2 {
+  bottom: 12%;
+  right: 8%;
+  animation: floating2 3s ease-in-out infinite;
+}
+@keyframes floating1 {
+  0% { transform: translate(0,  0px); }
+  50%  { transform: translate(0, 15px); }
+  100%   { transform: translate(0, -0px); }    
+}
+@keyframes floating2 {
+  0% { transform: translate(0, 0px); }
+  50% { transform: translate(0, -15px); }
+  100% { transform: translate(0, -0px); }
+}
+
 .PCborder {
   position: sticky;
   min-height: 100vh;
@@ -1750,12 +1802,14 @@ PC version
   z-index: -1;
 }
 .topleft {
-  top: 0;
+  top: 4%;
   left: 0;
+  margin: 8px 0;
 }
 .topright {
-  top: 0;
+  top: 4%;
   right: 0;
+  margin: 8px 0;
 }
 .btmleft {
   bottom: 0;
@@ -1764,6 +1818,15 @@ PC version
 .btmright {
   bottom: 0;
   right: 0;
+}
+
+.PClogo {
+  position: fixed;
+  width: auto;
+  top: 0;
+  left: 0;
+  margin: 12px 16px;
+  z-index: 10;
 }
 
 
@@ -1782,12 +1845,10 @@ PC version
 }
 
 .PC-navmenu-title {
-  color: #606c38;
-  text-align: center;
-  font-style: normal;
-  font-weight: 700;
-  line-height: 44px;
   padding-left: 20px;
+  img {
+    width: 120%;
+  }
 }
 
 .PC-navmenu {
@@ -1854,6 +1915,9 @@ PC version
 
 @media screen and (max-width: 1024px) {
   .PCborder {
+    display: none;
+  }
+  .PClogo {
     display: none;
   }
 }
