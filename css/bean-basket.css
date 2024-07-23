@@ -26,12 +26,12 @@ body {
 }
 .main-content {
     max-width: 460px;
+    width: 100%;
     margin: 0 auto;
     z-index: 1;
     position: relative;
     height: auto;
     flex: 1;
-
     min-height: 100vh;
     display: flex;
     flex-direction: column;
@@ -1112,144 +1112,214 @@ small {
     display: flex;
     height: 100vh;
   }
+
+.PCdecoration {
+  width: 100%;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  pointer-events: none;
+  z-index: 1000;
+}
+.PCdec {
+  position: absolute;
+}
+.left1 {
+  bottom: 26%;
+  left: 24%;
+  animation: floating1 3s ease-in-out infinite;
+}
+.left2 {
+  bottom: 26%;
+  left: 22%;
+  animation: floating2 3s ease-in-out infinite;
+}
+.righttop1 {
+  top: 32%;
+  right: 16%;
+  animation: floating2 3s ease-in-out infinite;
+}
+.righttop2 {
+  top: 36%;
+  right: 20%;
+  animation: floating1 3s ease-in-out infinite;
+} 
+.rightbtm1 {
+  bottom: 12%;
+  right: 3%;
+  animation: floating2 3s ease-in-out infinite;
+}
+.rightbtm2 {
+  bottom: 12%;
+  right: 8%;
+  animation: floating2 3s ease-in-out infinite;
+}
+@keyframes floating1 {
+  0% { transform: translate(0,  0px); }
+  50%  { transform: translate(0, 15px); }
+  100%   { transform: translate(0, -0px); }    
+}
+@keyframes floating2 {
+  0% { transform: translate(0, 0px); }
+  50% { transform: translate(0, -15px); }
+  100% { transform: translate(0, -0px); }
+}
   
-  .PCborder {
-    position: sticky;
-    min-height: 100vh;
-    overflow: auto;
-  }
+.PCborder {
+  position: sticky;
+  min-height: 100vh;
+  overflow: auto;
+}
+
+.border {
+  position: fixed;
+  width: 400px; 
+  background-image: url('../img/beanborder.svg');
+  background-size: cover;
+  z-index: -1;
+}
+.topleft {
+  top: 4%;
+  left: 0;
+  margin: 8px 0;
+}
+.topright {
+  top: 4%;
+  right: 0;
+  margin: 8px 0;
+}
+.btmleft {
+  bottom: 0;
+  left: 0;
+}
+.btmright {
+  bottom: 0;
+  right: 0;
+}
+
+
+.PClogo {
+  position: fixed;
+  width: auto;
+  top: 0;
+  left: 0;
+  margin: 12px 16px;
+  z-index: 10;
+}
+
   
-  .border {
-    position: fixed;
-    width: 400px; 
-    background-image: url('../img/beanborder.svg');
-    background-size: cover;
-    z-index: -1;
+.left-sidebar {
+  display: flex;
+  width: 320px;
+  height: 480px;
+  gap: 36px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  position: fixed;
+  top: 24%;
+  left: 4%;
+  overflow-y: auto;
+}
+
+.PC-navmenu-title {
+  padding-left: 20px;
+  img {
+    width: 120%;
   }
-  .topleft {
-    top: 0;
-    left: 0;
-  }
-  .topright {
-    top: 0;
-    right: 0;
-  }
-  .btmleft {
-    bottom: 0;
-    left: 0;
-  }
-  .btmright {
-    bottom: 0;
-    right: 0;
-  }
-  
-  
-  .left-sidebar {
-    display: flex;
-    width: 320px;
-    height: 480px;
-    gap: 36px;
-    flex-direction: column;
-    justify-content: center;
-    align-items: flex-start;
-    position: fixed;
-    top: 24%;
-    left: 4%;
-    overflow-y: auto;
-  }
-  
-  .PC-navmenu-title {
-    color: #606c38;
-    text-align: center;
-    font-style: normal;
-    font-weight: 700;
-    line-height: 44px;
-    padding-left: 20px;
-  }
-  
-  .PC-navmenu {
-    background-color: #606c38;
-    color: #FFF4CC;
-    padding: 20px 32px;
-    border-radius: 20px;
-    width: 280px;
-    height: 400px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    ul {
-      list-style-type: none;
-      li {
-        text-align: left;
-        font-size: 16px;
-        font-weight: 700;
-        line-height: normal;
-        padding: 24px 8px;
-        a {
-          text-decoration: none;
-          color: #FFF4CC;
-        }
+}
+
+.PC-navmenu {
+  background-color: #606c38;
+  color: #FFF4CC;
+  padding: 20px 32px;
+  border-radius: 20px;
+  width: 280px;
+  height: 400px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  ul {
+    list-style-type: none;
+    li {
+      text-align: left;
+      font-size: 16px;
+      font-weight: 700;
+      line-height: normal;
+      padding: 24px 8px;
+      a {
+        text-decoration: none;
+        color: #FFF4CC;
       }
     }
   }
-  .PC-navmenu li::before {
-    content: '';
-    display: inline-block;
-    background: url('../img/navmenubean.svg') no-repeat;
-    background-size: contain;
-    width: 16px;
-    height: 16px;
-    margin-right: 20px;
-    vertical-align: middle;
+}
+.PC-navmenu li::before {
+  content: '';
+  display: inline-block;
+  background: url('../img/navmenubean.svg') no-repeat;
+  background-size: contain;
+  width: 16px;
+  height: 16px;
+  margin-right: 20px;
+  vertical-align: middle;
+}
+
+.right-sidebar {
+  display: flex;
+  flex-direction: column;
+  gap: 36px;
+  width: 280px;
+  height: 160px;
+  position: fixed;
+  top: 60%;
+  right: 4%;
+  .PCbtn {
+    width: 80%;
+    background-color: #F69D4C;
+    border-radius: 20px;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    font-size: 16px;
+    font-weight: 700;
+    font-style: normal;
+    border: none;
+    padding: 12px 20px;
+    color: #FFFFFF;
+    text-decoration: none;
+    cursor: pointer;
   }
-  
-  .right-sidebar {
-    display: flex;
-    flex-direction: column;
-    gap: 36px;
-    width: 280px;
-    height: 160px;
-    position: fixed;
-    top: 60%;
-    right: 4%;
-    .PCbtn {
-      width: 80%;
-      background-color: #F69D4C;
-      
-      border-radius: 20px;
-      box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
-      font-size: 16px;
-      font-weight: 700;
-      font-style: normal;
-      border: none;
-      padding: 12px 20px;
-      color: #FFFFFF;
-      text-decoration: none;
-    }
+}
+
+/* Responsive design */
+
+@media screen and (max-width: 1024px) {
+  .PCborder {
+    display: none;
   }
-  
-  /* Responsive design */
-  
-  @media screen and (max-width: 1024px) {
-    .PCborder {
-      display: none;
-    }
+  .PClogo {
+    display: none;
+  } 
+  .PCdecoration {
+    display: none;
   }
-  @media (max-width: 1200px) {
-    .left-sidebar, .right-sidebar {
-      display: none;
-    }
-    .main-content {
-      width: 100%;
-    }
+}
+
+@media (max-width: 1200px) {
+  .left-sidebar, .right-sidebar {
+    display: none;
   }
-  @media (min-width: 1200px) {
-    .main-content {
-      width: 100%;
-    }
+  .main-content {
+    width: 100%;
   }
-  @media (min-width: 1024px) {
-    .noPC {
-      display: none;
-    }
+}
+@media (min-width: 1200px) {
+  .main-content {
+    width: 100%;
   }
+}
+@media (min-width: 1024px) {
+  .noPC {
+    display: none;
+  }
+}
