@@ -793,7 +793,8 @@ margin-top: 100px;
     font-size: 16px;
     transition: color 0.3s ease-in-out, border-bottom-color 0.3s ease-in-out;
     border-bottom: 2px solid transparent;
-    color: #C8C7C7
+    color: #C8C7C7;
+    cursor: pointer;
   }
 }
 .tab-content {
