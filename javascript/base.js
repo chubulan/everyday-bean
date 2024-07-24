@@ -86,6 +86,7 @@ footerBigLinks.forEach(link => {
   });
 });
 
+
 /*header background fill*/
 const header = document.querySelector('.noPC')
 const mainVisual = document.querySelector('.background')
