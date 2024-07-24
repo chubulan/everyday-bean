@@ -1252,6 +1252,10 @@ small {
         text-decoration: none;
         color: #FFF4CC;
       }
+      a:hover {
+        color: #F69D4C;
+        transition: all 0.1s ease-in-out;
+      }
     }
   }
 }
@@ -1277,7 +1281,10 @@ small {
   right: 4%;
   .PCbtn {
     width: 80%;
-    background-color: #F69D4C;
+    background: linear-gradient(to right, #FFFFFF 50%, #F69D4C 50%);
+    background-size: 200% 100%;
+    background-position: right bottom;
+    transition: all 0.2s ease-out;
     border-radius: 20px;
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
     font-size: 16px;
@@ -1288,6 +1295,12 @@ small {
     color: #FFFFFF;
     text-decoration: none;
     cursor: pointer;
+  }
+  .PCbtn:hover {
+    background-position: left bottom;
+    color: #F69D4C;
+    border: 2px solid #F69D4C;
+    font-weight: bold;
   }
 }
 
