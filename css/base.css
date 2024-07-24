@@ -803,19 +803,27 @@ major-introudction
   position: absolute;
   bottom: 28%;
   left: 4%;
-  animation: floating1 3s ease-in-out infinite;
+  animation: lightUp 2s ease-in-out infinite;
 }
 .bean12 {
   position: absolute;
-  bottom: 6%;
+  bottom: 4%;
   left: 2%;
-  animation: floating2 3s ease-in-out infinite;
+  animation: lightUp 2.3s ease-in-out infinite;
 }
 .beansprout2 {
   position: absolute;
-  bottom: 9%;
+  bottom: 6%;
   right: 2%;
-  animation: floating2 3s ease-in-out infinite;
+  animation: lightUp 2.5s ease-in-out infinite;
+}
+@keyframes lightUp {
+  0%, 100% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }   
 }
 
 /*=====
@@ -1061,7 +1069,7 @@ main visual background
   background-size: cover;
   background-position: center;
   width: 100%;
-  height: 130vh;
+  height: 128vh;
   position: relative;
   top: -2%;
 }
@@ -1545,7 +1553,10 @@ bean-basket
 }
 .see-more {
   font-weight: bold;
-  background: #F69D4C;
+  background: linear-gradient(to right, #FFFFFF 50%, #F69D4C 50%);
+  background-size: 200% 100%;
+  background-position: right bottom;
+  transition: all 0.2s ease-out;
   border-radius: 32px;
   border: none;
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
@@ -1555,11 +1566,18 @@ bean-basket
   padding: 16px 32px;
   text-decoration: none;
   color: #FFFFFF;
+  cursor: pointer;
+}
+.see-more:hover {
+  background-position: left bottom;
+  color: #F69D4C;
+  border: 2px solid #F69D4C;
+  font-weight: bold;
 }
 .bean9 {
   width: 30%;
   position: absolute;
-  top: 16%;
+  top: 8%;
   right: 10%;
   animation: floating2 3s ease-in-out infinite;
   z-index: 1;
@@ -1567,7 +1585,7 @@ bean-basket
 .bean10 {
   width: 30%;
   position: absolute;
-  bottom: 40%;
+  bottom: 42%;
   left: 10%;
   animation: floating2 3s ease-in-out infinite;
   z-index: 1;
@@ -1635,19 +1653,27 @@ major-introudction
   position: absolute;
   bottom: 28%;
   left: 4%;
-  animation: floating1 3s ease-in-out infinite;
+  animation: lightUp 2s ease-in-out infinite;
 }
 .bean12 {
   position: absolute;
   bottom: 4%;
   left: 2%;
-  animation: floating2 3s ease-in-out infinite;
+  animation: lightUp 2.3s ease-in-out infinite;
 }
 .beansprout2 {
   position: absolute;
   bottom: 6%;
   right: 2%;
-  animation: floating2 3s ease-in-out infinite;
+  animation: lightUp 2.5s ease-in-out infinite;
+}
+@keyframes lightUp {
+  0%, 100% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }   
 }
 
 /*=====
@@ -1659,6 +1685,7 @@ footer {
   padding-bottom: 36px;
   position: relative;
 }
+
 .footer-big-nav {
   ul {
     list-style-type: none;
@@ -1873,9 +1900,14 @@ PC version
         text-decoration: none;
         color: #FFF4CC;
       }
+      a:hover {
+        color: #F69D4C;
+        transition: all 0.1s ease-in-out;
+      }
     }
   }
 }
+
 .PC-navmenu li::before {
   content: '';
   display: inline-block;
@@ -1886,6 +1918,7 @@ PC version
   margin-right: 20px;
   vertical-align: middle;
 }
+
 
 .right-sidebar {
   display: flex;
@@ -1898,7 +1931,10 @@ PC version
   right: 4%;
   .PCbtn {
     width: 80%;
-    background-color: #F69D4C; 
+    background: linear-gradient(to right, #FFFFFF 50%, #F69D4C 50%);
+    background-size: 200% 100%;
+    background-position: right bottom;
+    transition: all 0.2s ease-out;
     border-radius: 20px;
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
     font-size: 16px;
@@ -1908,8 +1944,16 @@ PC version
     padding: 12px 20px;
     color: #FFFFFF;
     text-decoration: none;
+    cursor: pointer;
+  }
+  .PCbtn:hover {
+    background-position: left bottom;
+    color: #F69D4C;
+    border: 2px solid #F69D4C;
+    font-weight: bold;
   }
 }
+
 
 /* Responsive design */
 
@@ -1918,6 +1962,9 @@ PC version
     display: none;
   }
   .PClogo {
+    display: none;
+  }
+  .PCdecoration {
     display: none;
   }
 }
