@@ -5,8 +5,7 @@
   } 
   
 html, body {
-    font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Dela Gothic One",
-      "Noto Sans Japanese", "ヒラギノ角ゴ ProN W3", Meiryo, sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", sans-serif;
     font-size: 1.2rem;
     color: #292d28;
     width: 100%;
